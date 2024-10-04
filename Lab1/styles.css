@@ -1,0 +1,53 @@
+.Section {
+    * {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        scroll-margin-top: 50px;
+    }
+}
+#Section_1 {
+    background-color: rgb(245, 240, 230);
+}
+#Section_2 {
+    background-image: url(bg-orbs-1.jpg);
+    header {
+        background-color: rgb(255, 255, 255), 0.5;
+    }
+    .base {
+        background-color: rgb(255, 255, 255), 0.5;
+    }
+    .p1 {
+        color: rgb(255, 255, 255);
+    }
+}
+
+#MainNav {
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#MainNav li {
+    float: left;
+}
+
+#MainNav li a {
+    display: block;
+    color: #182b49;
+    text-align: center;
+    padding: 14px 16px;
+    height: 16px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: white;
+}
+.content {
+    padding: 16px;
+}
