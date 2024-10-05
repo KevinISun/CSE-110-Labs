@@ -1,9 +1,14 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .Section {
     * {
         margin: 0;
         padding: 0;
         width: 100%;
-        scroll-margin-top: 50px;
+        scroll-margin-top: 200px;
     }
 }
 .Para {
@@ -25,7 +30,16 @@
         color: rgb(255, 255, 255);
     }
 }
-
+.MainHeader {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    color: white;
+    text-align: left;
+    padding: 10x;
+    font-size: 36px;
+    z-index: 1000;
+}
 #MainNav {
     position: sticky;
     top: 0;
@@ -47,7 +61,7 @@
     color: #182b49;
     text-align: center;
     padding: 6px;
-    height: 16px;
+    height: 30px;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -59,17 +73,18 @@ li a:hover {
 }
 
 .column {
-    float: left;
-    width: 25%;
+    margin: 10px;
+    padding: 6px;
     gap: 25px;
     max-height: 500px;
+    min-width: 20%;
     background-color: #182b49;
     color: white;
-    overflow: scroll;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
-.row:after {
-    content: "";
-    display: table;
+.row {
+    display: flex;
     clear: both;
 }
