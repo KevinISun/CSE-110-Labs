@@ -88,3 +88,83 @@ li a:hover {
     display: flex;
     clear: both;
 }
+
+@media screen and (max-device-width: 800px) {
+    .MainHeader {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        color: white;
+        text-align: left;
+        padding: 10x;
+        font-size: 36px;
+        z-index: 1000;
+    }
+    #MainLogo {
+        max-width: 75%;
+    }
+    #MainNav {
+        display: none;
+        position: sticky;
+        top: 0;
+        max-width: 400px;
+        list-style-type: none;
+        margin: 0;
+        padding: 10px 50px;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+
+    #MainNav li {
+        display: none;
+    }
+
+    #MainNav li a {
+        display: none;
+    }
+    .Section {
+        * {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-size: 24px;
+            scroll-margin-top: 200px;
+        }
+    }
+    .Para {
+        font-size: 20px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-auto-rows: (100px, auto);
+    }
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .three {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .four {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .column {
+        margin: 10px;
+        padding: 6px;
+        gap: 25px;
+        max-height: 500px;
+        min-width: 40%;
+        background-color: #182b49;
+        color: white;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+}
